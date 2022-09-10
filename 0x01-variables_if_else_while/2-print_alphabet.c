@@ -4,44 +4,42 @@ nclude <stdio.h>
 
 /**
  *
- *  * main - program execution begins here
+ *  * main - print the letters of the alphabet
  *
  *   *
  *
- *    * Description: This program prints out all the letters of the alphabet
+ *    * Description: print the letters of the alphabet
  *
- *     * and then prints out newline character.
+ *     *
  *
- *      * Return: 0 (Successful)
+ *      * Return: Always 0 (Success)
  *
  *       */
+
+
 
 int main(void)
 
 {
 
-		char letter;
+		int i = 97;
 
 
 
-			letter = 'a';
+			while (i < 123)
+
+					{
+
+								putchar(i);
+
+										i++;
+
+											}
+
+				putchar(10);
 
 
 
-				while (letter <= 'z')
-
-						{
-
-									putchar(letter);
-
-											letter++;
-
-												}
-
-					putchar('\n');
-
-
-
-						return (0);
+					return (0);
 
 }
